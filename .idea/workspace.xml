@@ -855,7 +855,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameRoundTestSuite.testCheckShapes1000Round">
+  <component name="RunManager" selected="Application.RpsRunner">
     <configuration name="RpsRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kodilla.rps.RpsRunner" />
       <module name="main" />
@@ -1019,8 +1019,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GameRoundTestSuite.testCheckShapes1000Round" />
         <item itemvalue="Application.RpsRunner" />
+        <item itemvalue="JUnit.GameRoundTestSuite.testCheckShapes1000Round" />
         <item itemvalue="JUnit.GameRoundTestSuite" />
         <item itemvalue="JUnit.GameRoundTestSuite.testGameRoundOptionsIncorrectOption" />
         <item itemvalue="JUnit.GameRoundTestSuite.testGameRoundOptions" />
@@ -1300,7 +1300,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1360,7 +1360,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: junit:junit:4.12</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
