@@ -8,8 +8,6 @@ public class RpsRunner {
         GameStarter gameStarter = new GameStarter();
         gameStarter.startGame();
 
-        System.out.println("done!");
-
-
+        System.out.println("Game over.");
     }
 }

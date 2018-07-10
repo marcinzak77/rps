@@ -10,18 +10,25 @@ public class GameStarter {
 
         new CreateGameDetails();
         GameRound gameRound = new GameRound();
+        PrintGameSummary printGameSummary = new PrintGameSummary();
 
         while (!done) {
             rounds++;
-            System.out.println("Hi " + GameDetails.getInstance().getName() + " This is round number: " + rounds);
-            System.out.println("Your wins: " + WinCounter.getInstance().getWin() + " Your lost: " + WinCounter.getInstance().getLost());
+            printGameSummary.printGameSummary(rounds);
             Movements movements = new Movements();
-            option = movements.options();
+            option = movements.allOptions();
             done = gameRound.GameRound(option);
+
             if (rounds >= GameDetails.getInstance().getRounds()) {
+                System.out.println("Game summary:");
+                printGameSummary.printGameSummary(rounds);
+                EndGame endGame = new EndGame();
+                endGame.EndGame();
                 done = true;
-                continue;
             }
         }
+
+
+
     }
 }

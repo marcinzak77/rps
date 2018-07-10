@@ -12,5 +12,7 @@ public class CreateGameDetails {
 
         GameDetails.getInstance().setName(name);
         GameDetails.getInstance().setRounds(rounds);
+        WinCounter.getInstance().setWin(0);
+        WinCounter.getInstance().setLost(0);
     }
 }

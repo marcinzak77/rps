@@ -8,35 +8,55 @@ public class Movements {
     public static final String ROCK = "rock";
     public static final String SCISSORS = "scissors";
     public static final String PAPER = "paper";
+    private PrintOptions printOptions = new PrintOptions();
 
 
-    public String options() {
+    public String allOptions() {
 
-        PrintOptions printOptions = new PrintOptions();
-        printOptions.printOptions();
+        printOptions.printAllOptions();
 
         while (option != null) {
             option = KeyboardReader.getReadString().toLowerCase();
+            String isShape = shapesPickOptions(option);
+            String isExitOrNew = exitNewGameOptions(option);
 
-            if (option.equals("1")) {
-                return ROCK;
-            } else if (option.equals("2")) {
-                return PAPER;
-            } else if (option.equals("3")) {
-                return SCISSORS;
-            } else if (option.equals("x")) {
-                System.out.println("Exit Game ?");
-                if (Confirmation.confirm()) {
-                    return EXIT;
-                }
-            } else if (option.equals("n")) {
+            if (isShape!= null) {
+                return isShape;
+            } else if (isExitOrNew != null) {
+                return isExitOrNew;
+            }
+            printOptions.printAllOptions();
+        }
+
+        return option;
+    }
+
+    public String exitNewGameOptions(String option) {
+
+        if (option.equals("x")) {
+            System.out.println("Exit Game ?");
+            if (Confirmation.confirm()) {
+                return EXIT;
+            }
+        } else if (option.equals("n")) {
                 System.out.println("New Game ?");
                 if (Confirmation.confirm()) {
                     return NEW;
                 }
-            }
-            printOptions.printOptions();
         }
-            return option;
+
+        return null;
+    }
+
+    public String shapesPickOptions(String option) {
+
+        if (option.equals("1")) {
+            return ROCK;
+        } else if (option.equals("2")) {
+            return PAPER;
+        } else if (option.equals("3")) {
+            return SCISSORS;
+        }
+       return null;
     }
 }
