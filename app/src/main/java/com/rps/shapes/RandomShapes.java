@@ -1,6 +1,6 @@
-package com.kodilla.rps.shapes;
+package com.rps.shapes;
 
-import com.kodilla.rps.service.Movements;
+import com.rps.service.Movements;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.kodilla.rps.service;
+package com.rps.service;
 
 public class Movements {
 
@@ -11,12 +11,9 @@ public class Movements {
 
 
     public String options() {
-        System.out.println("Options: ");
-        System.out.println("[1] Rock");
-        System.out.println("[2] Paper");
-        System.out.println("[3] Scissors");
-        System.out.println("[x] End of Game");
-        System.out.println("[n] New Game");
+
+        PrintOptions printOptions = new PrintOptions();
+        printOptions.printOptions();
 
         while (option != null) {
             option = KeyboardReader.getReadString().toLowerCase();
@@ -28,13 +25,18 @@ public class Movements {
             } else if (option.equals("3")) {
                 return SCISSORS;
             } else if (option.equals("x")) {
-                return EXIT;
+                System.out.println("Exit Game ?");
+                if (Confirmation.confirm()) {
+                    return EXIT;
+                }
             } else if (option.equals("n")) {
-                return NEW;
-            } else option = null;
-
+                System.out.println("New Game ?");
+                if (Confirmation.confirm()) {
+                    return NEW;
+                }
+            }
+            printOptions.printOptions();
         }
-        return option;
-
+            return option;
     }
 }

@@ -1,4 +1,4 @@
-package com.kodilla.rps.service;
+package com.rps.service;
 
 public class CreateGameDetails {
 

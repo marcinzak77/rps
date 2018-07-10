@@ -1,9 +1,8 @@
-package com.kodilla.rps.service;
+package com.rps.service;
 
-import com.kodilla.rps.shapes.RandomShapes;
-import com.kodilla.rps.shapes.Shapes;
+import com.rps.shapes.RandomShapes;
+import com.rps.shapes.Shapes;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 

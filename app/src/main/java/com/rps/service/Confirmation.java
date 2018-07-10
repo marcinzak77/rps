@@ -1,8 +1,8 @@
-package com.kodilla.rps.service;
+package com.rps.service;
 
 public class Confirmation {
 
-    public static boolean confirm(String option) {
+    public static boolean confirm() {
 
             System.out.println("Are You sure? [Y]es/{N]o");
             char response = KeyboardReader.getReadString().toLowerCase().charAt(0);

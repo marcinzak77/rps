@@ -1,4 +1,4 @@
-package com.kodilla.rps.shapes;
+package com.rps.shapes;
 
 import java.util.*;
 

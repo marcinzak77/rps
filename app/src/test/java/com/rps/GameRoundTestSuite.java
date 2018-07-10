@@ -1,7 +1,7 @@
-package com.kodilla.rps;
+package com.rps;
 
-import com.kodilla.rps.service.CheckShapes;
-import com.kodilla.rps.service.GameRound;
+import com.rps.service.CheckShapes;
+import com.rps.service.GameRound;
 import org.junit.Assert;
 import org.junit.Test;
 

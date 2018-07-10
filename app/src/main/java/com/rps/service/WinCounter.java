@@ -1,4 +1,4 @@
-package com.kodilla.rps.service;
+package com.rps.service;
 
 public class WinCounter {
     private static WinCounter winCounterInstance = null;
@@ -34,5 +34,13 @@ public class WinCounter {
 
     public int getLost() {
         return lost;
+    }
+
+    public void setWin(int win) {
+        this.win = win;
+    }
+
+    public void setLost(int lost) {
+        this.lost = lost;
     }
 }
