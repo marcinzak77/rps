@@ -1,7 +1,5 @@
 package com.rps.shapes;
 
-import com.rps.service.Movements;
-
 import java.util.Random;
 
 public class RandomShapes {
@@ -12,11 +10,11 @@ public class RandomShapes {
         int randomNumber = generator.nextInt(3);
 
         if (randomNumber == 0) {
-            return Movements.PAPER;
+            return Options.PAPER;
         } else if (randomNumber == 1) {
-            return Movements.ROCK;
+            return Options.ROCK;
         } else {
-            return Movements.SCISSORS;
+            return Options.SCISSORS;
         }
     }
 

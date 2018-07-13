@@ -4,8 +4,8 @@ public class GameRound {
 
     public boolean GameRound(String option) {
 
-        ExitOrNewGame exitOrNewGame = new ExitOrNewGame();
-        if (exitOrNewGame.ExitOrNewGam(option)) {
+        Options options = new Options();
+        if (options.exitGame(option) || options.startNewGame(option)) {
             return true;
         }
 
